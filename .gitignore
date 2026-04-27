@@ -1,0 +1,15 @@
+﻿# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Environment variables
+.env
+frontend/.env
+
+# Build output
+frontend/dist/
+
+# Temp files
+fix.py
+gen.py
+test_write.txt
