@@ -47,7 +47,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Ethnic",
     "budget": "Premium",
     "budgetOrder": 4,
-    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&fit=crop",
     "tags": [
       "sherwani",
       "groom",
@@ -178,7 +178,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Ethnic",
     "budget": "3000-7000",
     "budgetOrder": 3,
-    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&fit=crop",
     "tags": [
       "bandhgala",
       "indo-western",
@@ -221,7 +221,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Ethnic",
     "budget": "Premium",
     "budgetOrder": 4,
-    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop&sat=-20",
+    "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop&sat=-30",
     "tags": [
       "velvet",
       "lehenga",
@@ -263,7 +263,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Ethnic",
     "budget": "Premium",
     "budgetOrder": 4,
-    "image": "https://images.unsplash.com/photo-1594938298603-c8148c4b4357?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&fit=crop",
     "tags": [
       "sherwani",
       "wool",
@@ -305,7 +305,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Ethnic",
     "budget": "Premium",
     "budgetOrder": 4,
-    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop&sat=10",
+    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop",
     "tags": [
       "pashmina",
       "saree",
@@ -348,7 +348,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Ethnic",
     "budget": "1000-3000",
     "budgetOrder": 2,
-    "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop",
     "tags": [
       "chiffon",
       "saree",
@@ -393,7 +393,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Traditional",
     "budget": "1000-3000",
     "budgetOrder": 2,
-    "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&fit=crop",
     "tags": [
       "kurta",
       "linen",
@@ -836,7 +836,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Western",
     "budget": "1000-3000",
     "budgetOrder": 2,
-    "image": "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1594938298603-c8148c4b4357?w=500&fit=crop",
     "tags": [
       "blazer",
       "jeans",
@@ -968,7 +968,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Ethnic",
     "budget": "1000-3000",
     "budgetOrder": 2,
-    "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&fit=crop",
     "tags": [
       "dhoti",
       "kurta",
@@ -1282,7 +1282,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Western",
     "budget": "Under 1000",
     "budgetOrder": 1,
-    "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&fit=crop",
     "tags": [
       "hoodie",
       "joggers",
@@ -1328,7 +1328,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Western",
     "budget": "1000-3000",
     "budgetOrder": 2,
-    "image": "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&fit=crop",
     "tags": [
       "sweater",
       "corduroy",
@@ -1686,7 +1686,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Western",
     "budget": "1000-3000",
     "budgetOrder": 2,
-    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=500&fit=crop",
     "tags": [
       "denim",
       "rainy",
@@ -1774,7 +1774,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Western",
     "budget": "1000-3000",
     "budgetOrder": 2,
-    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop",
     "tags": [
       "shirt",
       "chinos",
@@ -1954,7 +1954,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Western",
     "budget": "1000-3000",
     "budgetOrder": 2,
-    "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&fit=crop",
     "tags": [
       "tracksuit",
       "sports",
@@ -2000,7 +2000,7 @@ module.exports.OUTFITS_SEED = [
     "style": "Western",
     "budget": "Under 1000",
     "budgetOrder": 1,
-    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&fit=crop",
+    "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&fit=crop",
     "tags": [
       "yoga",
       "sports",

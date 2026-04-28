@@ -12,18 +12,60 @@ const api = async (path, method = "GET", body = null) => {
 
 // Accurate outfit images matched by name keyword
 const OUTFIT_IMAGES = {
-  "slim fit blazer":    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&fit=crop",
-  "a-line kurti":       "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop",
-  "high waist jeans":   "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&fit=crop",
-  "long gown":          "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&fit=crop",
-  "silk saree":         "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop",
-  "casual tee":         "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop",
-  "floral maxi dress":  "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&fit=crop",
-  "formal suit":        "https://images.unsplash.com/photo-1594938298603-c8148c4b4357?w=500&fit=crop",
-  "anarkali suit":      "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=500&fit=crop",
-  "denim jacket":       "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=500&fit=crop",
-  "lehenga choli":      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop",
-  "office formals":     "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&fit=crop",
+  'bridal lehenga choli':       'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop',
+  'velvet lehenga':             'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop',
+  'lehenga choli':              'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop',
+  'a-line kurti':               'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop',
+  'anarkali gown':              'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=500&fit=crop',
+  'anarkali suit':              'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=500&fit=crop',
+  'embroidered sharara':        'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=500&fit=crop',
+  'phulkari salwar':            'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=500&fit=crop',
+  'formal kurti':               'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop',
+  'kashmiri woolen kurti':      'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop',
+  'printed palazzo':            'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop',
+  'cotton salwar':              'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&fit=crop',
+  'silk banarasi saree':        'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop',
+  'silk saree':                 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop',
+  'chiffon floral saree':       'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop',
+  'pashmina wrap saree':        'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop',
+  'office formal saree':        'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop',
+  'pattu pavadai':              'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&fit=crop',
+  'sherwani':                   'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&fit=crop',
+  'bandhgala':                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&fit=crop',
+  'dhoti kurta':                'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&fit=crop',
+  'linen kurta':                'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&fit=crop',
+  'classic black formal suit':  'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&fit=crop',
+  'formal suit':                'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&fit=crop',
+  'slim fit blazer':            'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&fit=crop',
+  'slim fit formal blazer':     'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&fit=crop',
+  'navy blue blazer':           'https://images.unsplash.com/photo-1594938298603-c8148c4b4357?w=500&fit=crop',
+  'smart casual blazer':        'https://images.unsplash.com/photo-1594938298603-c8148c4b4357?w=500&fit=crop',
+  'pencil skirt':               'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&fit=crop',
+  'pantsuit':                   'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&fit=crop',
+  'office formals':             'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&fit=crop',
+  'formal trousers':            'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&fit=crop',
+  'long gown':                  'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&fit=crop',
+  'long satin gown':            'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&fit=crop',
+  'sequin party dress':         'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&fit=crop',
+  'red wrap dress':             'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&fit=crop',
+  'off-shoulder midi dress':    'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&fit=crop',
+  'floral maxi dress':          'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&fit=crop',
+  'sundress':                   'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&fit=crop',
+  'boho maxi':                  'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&fit=crop',
+  'high waist jeans':           'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&fit=crop',
+  'turtleneck':                 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&fit=crop',
+  'casual tee':                 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop',
+  'linen shirt':                'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop',
+  'smart casual shirt':         'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop',
+  'linen co-ord':               'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&fit=crop',
+  'denim jacket':               'https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=500&fit=crop',
+  'dark denim':                 'https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=500&fit=crop',
+  'puffer jacket':              'https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=500&fit=crop',
+  'trench coat':                'https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=500&fit=crop',
+  'woolen sweater':             'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&fit=crop',
+  'oversized hoodie':           'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&fit=crop',
+  'track suit':                 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&fit=crop',
+  'yoga pants':                 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&fit=crop',
 };
 
 const CATEGORY_IMAGES = {
@@ -37,11 +79,12 @@ const CATEGORY_IMAGES = {
 };
 
 function getOutfitImage(outfit) {
-  if (outfit.image && !outfit.image.includes("566479179817")) return outfit.image;
-  const key = Object.keys(OUTFIT_IMAGES).find(k => outfit.name?.toLowerCase().includes(k));
+  if (outfit.image && outfit.image.includes("unsplash.com")) return outfit.image;
+  const lower = outfit.name?.toLowerCase() || "";
+  const keys = Object.keys(OUTFIT_IMAGES).sort((a,b) => b.length - a.length);
+  const key = keys.find(k => lower.includes(k));
   if (key) return OUTFIT_IMAGES[key];
-  return CATEGORY_IMAGES[outfit.category] || CATEGORY_IMAGES[outfit.style] ||
-    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&fit=crop";
+  return CATEGORY_IMAGES[outfit.category] || CATEGORY_IMAGES[outfit.style] || "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&fit=crop";
 }
 
 const HERO_IMGS = [
@@ -788,6 +831,7 @@ export default function App() {
     </div>
   );
 }
+
 
 
 
