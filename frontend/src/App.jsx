@@ -256,7 +256,7 @@ function Navbar({ page, setPage, user, onLogout, wishCount }) {
 }
 
 // ─── HOME PAGE ────────────────────────────────────────────────────────────────
-function HomePage({ user, onWish, wishlist, setToast }) {
+function HomePage({ user, onWish, wishlist, setToast, setPage }) {
   const [outfits, setOutfits] = useState([]);
   useEffect(() => { api("/wardrobe").then(setOutfits); }, []);
   const reviews = [
@@ -280,8 +280,8 @@ function HomePage({ user, onWish, wishlist, setToast }) {
           <h1>Find Your Perfect Style with AI ✨</h1>
           <p>Brocele uses cutting-edge artificial intelligence to analyze your unique features and suggest outfits that make you look and feel extraordinary.</p>
           <div className="hero-btns">
-            <button className="btn-primary">Get Started 🚀</button>
-            <button className="btn-outline">Try Virtual Try-On 📸</button>
+            <button className="btn-primary" onClick={() => setPage("features")}>Get Started 🚀</button>
+            <button className="btn-outline" onClick={() => { setPage("features"); setTimeout(() => document.querySelector(".feature-card:nth-child(4)")?.click(), 300); }}>Try Virtual Try-On 📸</button>
           </div>
           <div className="hero-stats">
             <div className="hero-stat"><h3>50K+</h3><p>Happy Customers</p></div>
@@ -768,7 +768,7 @@ export default function App() {
 
   const renderPage = () => {
     switch(page) {
-      case "home":          return <HomePage user={user} onWish={handleWish} wishlist={wishlist} setToast={setToast} />;
+      case "home":          return <HomePage user={user} onWish={handleWish} wishlist={wishlist} setToast={setToast} setPage={setPage} />;
       case "about-us":      return <AboutPage />;
       case "features":      return <FeaturesPage user={user} setToast={setToast} />;
       case "contact":       return <ContactPage setToast={setToast} />;
@@ -788,5 +788,8 @@ export default function App() {
     </div>
   );
 }
+
+
+
 
 
